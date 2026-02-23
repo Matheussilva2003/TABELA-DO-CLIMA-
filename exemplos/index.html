@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Naruto • Akatsuki</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background:#0b0b0b;
+            color:white;
+            min-height:100vh;
+            display:flex;
+            flex-direction:column;
+        }
+
+        /* ===== MENU ===== */
+        header{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:20px 50px;
+            background:black;
+            border-bottom:3px solid #b30000;    
+        }
+
+        header h1{
+            color:#b30000;
+            letter-spacing:2px;
+        }
+
+        nav{
+            display:flex;
+            gap:25px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+            transition:0.3s;
+        }
+
+        nav a:hover{
+            color:#b30000;
+        }
+
+        /* ===== BANNER ===== */
+        .banner{
+            height:280px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+            background:
+                linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                url("https://wallpapercave.com/wp/wp2599594.jpg");
+            background-size:cover;
+            background-position:center;
+            border-bottom:3px solid #b30000;
+        }
+
+        .banner h2{
+            font-size:38px;
+            color:#fff;
+            text-shadow:0 0 15px #b30000;
+        }
+
+        /* ===== CONTAINER ===== */
+        .container{
+            display:flex;
+            justify-content:center;
+            gap:35px;
+            padding:50px;
+            flex-wrap:wrap;
+            flex:1;
+        }
+
+        /* ===== CARD ===== */
+        .card{
+            width:230px;
+            background:#111;
+            border-radius:12px;
+            overflow:hidden;
+            border:2px solid #b30000;
+            box-shadow:0 0 15px rgba(179,0,0,0.6);
+            transition:0.4s;
+        }
+
+        .card:hover{
+            transform:translateY(-10px) scale(1.05);
+            box-shadow:0 0 25px rgba(179,0,0,1);
+        }
+
+        .card img{
+            width:100%;
+            height:260px;
+            object-fit:cover;
+        }
+
+        .card h3{
+            padding:15px;
+            text-align:center;
+            color:white;
+        }
+
+        .card button{
+            width:100%;
+            padding:12px;
+            background:#b30000;
+            border:none;
+            color:white;
+            font-weight:bold;
+            cursor:pointer;
+            transition:0.3s;
+        }
+
+        .card button:hover{
+            background:#ff0000;
+        }
+
+        /* ===== RODAPÉ ===== */
+        footer{
+            background:black;
+            padding:15px;
+            text-align:center;
+            border-top:3px solid #b30000;
+            color:#aaa;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- MENU -->
+    <header>
+        <h1>AKATSUKI</h1>
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Personagens</a>
+            <a href="#">Sobre</a>
+        </nav>
+    </header>
+
+    <!-- BANNER -->
+    <section class="banner">
+        <h2>Personagens do Universo Naruto</h2>
+    </section>
+
+    <!-- CARDS -->
+    <main class="container">
+
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/9/94/NarutoCoverTankobon1.jpg">
+            <h3>Naruto Uzumaki</h3>
+            <button>Ver Mais</button>
+        </div>
+
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/0/0d/SasukeUchiha.png">
+            <h3>Sasuke Uchiha</h3>
+            <button>Ver Mais</button>
+        </div>
+
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/e/e1/Kakashi_Hatake.png">
+            <h3>Kakashi Hatake</h3>
+            <button>Ver Mais</button>
+        </div>
+
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/3/3b/Sakura_Haruno.png">
+            <h3>Sakura Haruno</h3>
+            <button>Ver Mais</button>
+        </div>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+        Trabalho escolar • Flexbox • Tema Akatsuki • Matheus
+    </footer>
+
+</body>
+</html>
